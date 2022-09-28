@@ -1,0 +1,143 @@
+:root {
+    --primary: #162D54;
+    --backgroundDark: #1A1A1A;
+    --backgroundSubtle: #F2F2F2;
+    --backgroundLight: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--backgroundSubtle);
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+}
+
+section.screen {
+    min-height: 100vh;
+    justify-content: center;
+}
+
+section.screen>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.blue {
+    background-color: var(--primary);
+    color: var(--backgroundLight);
+}
+
+header {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    position: fixed;
+    background-color: var(--backgroundSubtle);
+    z-index: 999;
+}
+
+.logo {
+    width: auto;
+    height: 2rem;
+}
+
+.box {
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+}
+
+.screen>div>span {
+    font-family: 'Source Serif 4', serif;
+    color: var(--primary);
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 100%;
+    /* letter-spacing: 0.04em; */
+    text-align: center;
+    margin-left: 1.5rem;
+}
+
+.screen>div>div {
+    margin-left: 1.5rem;
+}
+
+/* Cajitas del titulo*/
+.title-box {
+    width: 10rem;
+    height: 6rem;
+    background-image: url("/assets/title-1.jpg");
+    background-size: cover;
+}
+
+.title-box.img1 {
+    background-image: url("/assets/title-2.jpg");
+}
+
+.title-box.img2 {
+    background-image: url("/assets/title-3.jpg");
+}
+
+.title-box.img3 {
+    background-image: url("/assets/title-4.mp4");
+}
+
+h1 {
+    color: var(--backgroundDark);
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
+
+.cta {
+    display: inherit;
+    height: auto;
+    width: auto;
+    padding: 1.4rem 1.2rem;
+    font-size: 1.6rem !important;
+    font-family: 'Inter Tight', sans-serif !important;
+    font-weight: 400 !important;
+    border: #162D54 solid 2px;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta.white {
+    border: #fff solid 2px;
+}
+
+.cta>img {
+    margin-left: 0.8rem;
+}
+
+.paragraph {
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.paragraph>.small {
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.paragraph>.content {
+    font-size: 1.4rem;
+    line-height: 140%;
+    opacity: 0.9;
+}
+
+.row {
+    flex-direction: row !important;
+}
