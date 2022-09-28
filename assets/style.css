@@ -1,5 +1,6 @@
 :root {
     --primary: #162D54;
+    --secondary: #D5E0F0;
     --backgroundDark: #1A1A1A;
     --backgroundSubtle: #F2F2F2;
     --backgroundLight: #FFFFFF;
@@ -15,12 +16,20 @@
 body {
     background: var(--backgroundSubtle);
     font-family: 'Inter Tight', sans-serif;
-    font-weight: 400;
 }
 
 section.screen {
     min-height: 100vh;
     justify-content: center;
+}
+
+.full {
+    min-height: 100vh;
+    height: 900px;
+}
+
+.subtle {
+    background-color: var(--secondary);
 }
 
 section.screen>div {
@@ -32,6 +41,21 @@ section.screen>div {
 section.blue {
     background-color: var(--primary);
     color: var(--backgroundLight);
+    height: auto !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content>img {
+    width: auto;
+    height: 35rem;
 }
 
 header {
@@ -122,22 +146,92 @@ h1 {
 }
 
 .paragraph {
-    width: 600px;
+    width: 500px;
     flex-direction: column;
     align-items: flex-start !important;
 }
 
-.paragraph>.small {
+.small {
     opacity: 0.5;
     font-size: 1rem;
+    font-weight: 700;
 }
 
 .paragraph>.content {
     font-size: 1.4rem;
-    line-height: 140%;
+    line-height: 160%;
     opacity: 0.9;
 }
 
+.op75 {
+    opacity: 0.75 !important;
+}
+
 .row {
+    width: 100%;
     flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap !important;
+}
+
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    line-height: 200%;
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-image: url("/assets/img/card-1.jpg");
+}
+
+.cardImage.img2 {
+    background-image: url("/assets/img/card-2.jpg");
+}
+
+.cardImage.img3 {
+    background-image: url("/assets/img/card-3.jpg");
+}
+
+.cardImage.img4 {
+    background-image: url("/assets/img/card-4.jpg");
+}
+
+.cardLink {
+    height: 2.5rem;
+    font-weight: 500;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.cardLink>img {
+    margin-left: 0.5rem;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.footer-img {
+    position: absolute;
+    bottom: 0;
 }
